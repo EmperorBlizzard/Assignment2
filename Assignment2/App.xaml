@@ -9,7 +9,6 @@
                 <ResourceDictionary Source="Resources/ButtonsDictionary.xaml"/>
                 <ResourceDictionary Source="Resources/FieldDictionary.xaml"/>
                 <ResourceDictionary Source="Resources/LableDictionary.xaml"/>
-                <ResourceDictionary Source="Resources/ListViewsDictionary.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
