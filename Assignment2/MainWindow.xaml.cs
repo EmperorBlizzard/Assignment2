@@ -24,5 +24,30 @@ namespace Assignment2
         {
             InitializeComponent();
         }
+
+        private void btn_Add_Click(object sender, RoutedEventArgs e)
+        {
+            var Con
+        }
+
+        private void ClearFields()
+        {
+            tb_FirstName.Text = "";
+            tb_LastName.Text = "";
+            tb_Email.Text = "";
+            tb_StreetName.Text = "";
+            tb_PostalCode.Text = "";
+            tb_City.Text = "";
+        }
+
+        private void lv_Contacts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void btn_Remove_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

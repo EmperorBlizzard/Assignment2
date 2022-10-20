@@ -17,7 +17,7 @@ namespace Assignment2.Services
         public string Read(string filePath)
         {
             using var sr = new StreamReader(filePath);
-            return sr.ReadToEnd();
+            return sr.ReadToEnd();  
         }
     }
 }
