@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Assignment2.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,14 +22,17 @@ namespace Assignment2
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ObservableCollection<ContactPerson> contacts;
         public MainWindow()
         {
             InitializeComponent();
+            contacts = new ObservableCollection<ContactPerson>();
+            lv_Contacts.ItemsSource = contacts;
         }
 
         private void btn_Add_Click(object sender, RoutedEventArgs e)
         {
-            var Con
+            var contact = contacts.FirstOrDefault(x => x.Email == tb_Email.Text);
         }
 
         private void ClearFields()
