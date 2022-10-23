@@ -56,12 +56,21 @@
                 </Grid>
             </StackPanel>
             <Button 
+                Visibility="Visible"
                 Grid.Row="1"
                 x:Name="btn_Add"
                 Content="Add Contact"
                 Click="btn_Add_Click"
                 Style="{StaticResource defaultButton}"
             />
+            <Button
+                Visibility="Hidden"
+                Grid.Row="1"
+                x:Name="btn_Edit"
+                Content="Edit Contact"
+                Click="btn_Edit_Click"
+                Style="{StaticResource defaultButton}"
+                />
         </Grid>
         <ListView x:Name="lv_Contacts" SelectionChanged="lv_Contacts_SelectionChanged" Grid.Column="1" Margin="20" HorizontalContentAlignment="Stretch">
             <ListView.ItemTemplate>
@@ -81,7 +90,9 @@
                             x:Name="btn_Remove"
                             Click="btn_Remove_Click"
                             Grid.Column="1"
+                            FontFamily="Segoe MDL2 Assets"
                             Content="&#xE74D;"
+                            
                         />
                         
                     </Grid>

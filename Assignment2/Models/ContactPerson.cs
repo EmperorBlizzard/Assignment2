@@ -8,6 +8,12 @@ namespace Assignment2.Models
 {
     internal class ContactPerson
     {
+        public ContactPerson()
+        {
+
+        }
+
+        //Mallen av kontakter
         public Guid Id { get; set; } = Guid.NewGuid();
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
@@ -17,5 +23,7 @@ namespace Assignment2.Models
         public string City { get; set; } = null!;
 
         public string FullName => $"{FirstName} {LastName}";
+
+        public DateTime Created { get; set; } = DateTime.Now;
     }
 }
